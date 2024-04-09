@@ -1,102 +1,14 @@
-// // // Code your solution in this file!
+// // // // Code your solution in this file!
  
-
-
-// function distanceFromHqInBlocks(blockNumber){
-
-//   if(blockNumber > 42){
-//     return blockNumber - 42
-// } else{
-//     return 42 - blockNumber
-// }
-// };
-
-
-
-// // // return distance
-
-// const feetPerBlock = 264;
-
-// function distanceFromHqInFeet (blockNumber){
-// return DistanceInFeet - distanceFromHqInBlocks (blockNumber)
-// return  DistanceInFeet = -263 + 264;
-// return  DistanceInFeet = 2112;
-
-//   };
-
-
-  // const feetPerBlock = 264;
-
-  // // Calculate the total distance in feet
-  // const totalDistanceInFeet = 4 * 264;
-
-  // return totalDistanceInFeet )};
-
-
-
-// console.log(distanceFromHqInBlocks(50=8));
-// const distanceFromHqInBlocks = ' returns a distance in blocks:';
-
-// //      ('index.js'),
-// //       function () {
-// //     return ('distanceFromHqInBlocks(43)',  = 'returns a distance in blocks')};
-    
-
-
-// //     // function() {
-// //     //   it('returns a distance in blocks', function() {
-// //     //     expect(distanceFromHqInBlocks(43)).to.equal(1);
-// //     //   });
-
-
-//     ///Assigment:
-
-// function distanceFromHqInFeet(pickupStreetNumber) {
-//   // Assume Hq (headquarters) is located at 42nd street
-//   const hqStreetNumber = 42;
-
-//   // Calculate the absolute difference in street numbers
-//   const distanceInBlocks = Math.abs(pickupStreetNumber - hqStreetNumber);
-
-//   // Each block is approximately 264 feet
-//   const feetPerBlock = 264;
-
-//   // Calculate the total distance in feet
-//   const totalDistanceInFeet = distanceInBlocks * feetPerBlock;
-
-//   return totalDistanceInFeet;
-// }
-
-// // Example usage:
-// const pickupStreetNumber = 42; 
-// const distance = distanceFromHqInFeet(pickupStreetNumber);
-// console.log(`Distance from HQ: ${distance} feet`);
-
-
-
-// index.js
-
-// // Function to calculate the distance in blocks from Scuber headquarters
-// function distanceFromHqInBlocks(pickupLocation) {
-//   const hqLocation = 42;
-//   return Math.abs(pickupLocation - hqLocation);
-// }
-
-// module.exports = {
-//   distanceFromHqInBlocks,
-  
-// };
-
-
 // Function to calculate the distance in blocks from Scuber headquarters
-function distanceFromHqInBlocks(pickupLocation) {
+function distanceFromHqInBlocks(Location) {
   const hqLocation = 42;
-  return Math.abs(pickupLocation - hqLocation);
+  return Math.abs(Location - hqLocation);
 }
 
 // Function to translate the number of blocks to distance in feet
-function distanceFromHqInFeet(pickupLocation) {
-  const blocks = distanceFromHqInBlocks(pickupLocation);
+function distanceFromHqInFeet(aLocation) {
+  const blocks = distanceFromHqInBlocks(aLocation);
   const feet = blocks * 264;
   return feet;
 }
@@ -132,10 +44,9 @@ function calculatesFarePrice(startBlock, endBlock) {
   }
 }
 
-module.exports = {
-  distanceFromHqInBlocks,
-  distanceFromHqInFeet,
-  distanceTravelledInFeet,
-  calculatesFarePrice
-};
+
+
+
+
+
 
